@@ -15,13 +15,10 @@ namespace ConsoleApp_IsCorrectPlaceBrackets
             Console.WriteLine("Программа проверяет корректность расстановки скобок" +
                 "\nВведите пожалуйста для проверки текст:");
             string text = Console.ReadLine();
+            Console.Clear();
             Console.WriteLine("Введенный текст: \n{0}", text);
-
-
-            Console.WriteLine(IsCorrectPlaceBrackets_Task.CheckCorrectBrackets(text));
-            Console.WriteLine();
-       
-
+            //Console.WriteLine(IsCorrectPlaceBrackets_Task.CheckCorrectBrackets(text));
+            Console.WriteLine(CorrectSeqOfBracketsMethod.AnotherCheckCorrectBrackets(text));
         }
     }
 }
